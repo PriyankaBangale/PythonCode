@@ -1,0 +1,19 @@
+Following are some referecnes 
+https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/translate/cloud-client
+https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/08/21/microsoft-cognitive-services-translation-api-with-python-c/
+https://docs.microsoft.com/en-us/azure/cognitive-services/translator/quickstart-python-translate
+https://pypi.org/project/bing_translator/
+
+ibm watson exmaple(install necessary package before running this code)
+from watson_developer_cloud import LanguageTranslatorV3
+language_translator = LanguageTranslatorV3(
+    version='2018-05-01',
+    iam_apikey='5cpUmgb1SqyZoNU9AvLKOuk7K9DYZ1C-YE9J-90Z-qOg',
+    url='https://gateway.watsonplatform.net/language-translator/api'
+)
+
+translation = language_translator.translate(
+    text='holla',
+    model_id='en-ar').get_result()
+print(translation)
+print(language_translator.list_models())
