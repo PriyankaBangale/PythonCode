@@ -1,1 +1,3 @@
 https://github.com/FavioVazquez/ds-cheatsheets
+https://stackoverflow.com/questions/51290134/using-pandas-how-do-i-split-based-on-the-first-space
+https://stackoverflow.com/questions/50082846/combining-multiple-columns-with-same-name-in-pandas-dataframe
